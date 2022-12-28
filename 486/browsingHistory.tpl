@@ -2,45 +2,45 @@
   <div class="browsingHistory-content">
     <h3 class="browsingHistory-title">瀏覽紀錄</h3>
     <a href="#1" class="browsingHistory-item">
-      <img src="http://fakeimg.pl/170x170/?text=img1" alt="" class="thumb" />
-      <img src="http://fakeimg.pl/340x340/?text=img1" alt="" class="large" />
+      <img src="https://fakeimg.pl/170x170/?text=img1" alt="" class="thumb" />
+      <img src="https://fakeimg.pl/340x340/?text=img1" alt="" class="large" />
     </a>
     <a href="#2" class="browsingHistory-item">
       <img
-        src="http://fakeimg.pl/170x170/dddddd/?text=img2"
+        src="https://fakeimg.pl/170x170/dddddd/?text=img2"
         alt=""
         class="thumb"
       />
       <img
-        src="http://fakeimg.pl/340x340/dddddd/?text=img2"
+        src="https://fakeimg.pl/340x340/dddddd/?text=img2"
         alt=""
         class="large"
       />
     </a>
     <a href="#3" class="browsingHistory-item">
       <img
-        src="http://fakeimg.pl/170x170/eeeeee/?text=img3"
+        src="https://fakeimg.pl/170x170/eeeeee/?text=img3"
         alt=""
         class="thumb"
       />
       <img
-        src="http://fakeimg.pl/340x340/eeeeee/?text=img3"
+        src="https://fakeimg.pl/340x340/eeeeee/?text=img3"
         alt=""
         class="large"
       />
     </a>
     <a href="#1" class="browsingHistory-item">
-      <img src="http://fakeimg.pl/170x170/?text=img1" alt="" class="thumb" />
-      <img src="http://fakeimg.pl/340x340/?text=img1" alt="" class="large" />
+      <img src="https://fakeimg.pl/170x170/?text=img1" alt="" class="thumb" />
+      <img src="https://fakeimg.pl/340x340/?text=img1" alt="" class="large" />
     </a>
     <a href="#2" class="browsingHistory-item">
       <img
-        src="http://fakeimg.pl/170x170/dddddd/?text=img2"
+        src="https://fakeimg.pl/170x170/dddddd/?text=img2"
         alt=""
         class="thumb"
       />
       <img
-        src="http://fakeimg.pl/340x340/dddddd/?text=img2"
+        src="https://fakeimg.pl/340x340/dddddd/?text=img2"
         alt=""
         class="large"
       />

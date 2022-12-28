@@ -1,1 +1,19 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="64" height="64" viewBox="0 0 64 64" xml:space="preserve"><g id="facebook_x5F_circle"><circle fill="#3C5A99" cx="32" cy="32" r="32"/><path fill="#FFF" d="M34 22.434V30h-9v10h9v23.918c3-.237 7-1.037 10-2.315V40h8.478l1.246-10H44v-6.609c0-2.797.826-4.703 4.836-4.703L54 18.686v-8.639c-1-.118-3.982-.381-7.516-.381C39.111 9.666 34 14.168 34 22.434z"/></g></svg>
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="https://www.w3.org/2000/svg"
+  x="0"
+  y="0"
+  width="64"
+  height="64"
+  viewBox="0 0 64 64"
+  xml:space="preserve"
+>
+  <g id="facebook_x5F_circle">
+    <circle fill="#3C5A99" cx="32" cy="32" r="32" />
+    <path
+      fill="#FFF"
+      d="M34 22.434V30h-9v10h9v23.918c3-.237 7-1.037 10-2.315V40h8.478l1.246-10H44v-6.609c0-2.797.826-4.703 4.836-4.703L54 18.686v-8.639c-1-.118-3.982-.381-7.516-.381C39.111 9.666 34 14.168 34 22.434z"
+    />
+  </g>
+</svg>

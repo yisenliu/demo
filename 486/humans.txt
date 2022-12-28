@@ -6,7 +6,7 @@
 
 /* TEAM */
   Company: 匯豐汽車網路事業
-  Website: http://ciao.30888.com.tw
+  Website: https://ciao.30888.com.tw
   Contact: (02)2782-1111 ext.6906,6907,6908
   Address: 台北市成功路一段36巷20號6樓
 
@@ -14,8 +14,8 @@
   Contact: (02)2782-1111 ext.6907
 
   VD / F2E: Yisen
-  Facebook: http://www.facebook.com/yisen838
-  Profile: http://yisenliu.github.io/works/
+  Facebook: https://www.facebook.com/yisen838
+  Profile: https://yisenliu.github.io/works/
   Contact: (02)2782-1111 ext.6905
 
   SEO / Back-end: 嚴福斌
