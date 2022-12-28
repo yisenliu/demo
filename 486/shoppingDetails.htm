@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no,  minimal-ui"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Used by IE, and also by some other browsers if we are not careful. -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- For new browsers - multisize ico  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- Same as apple-touch-icon.png, expect that is already have rounded corners (but neither drop shadow nor gloss effect). -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicons/apple-touch-icon-precomposed.png"
+    />
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/favicons/apple-icon-57x57.png"
+    />
+
+    <!-- For non-retina iPhone with iOS7. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="images/favicons/apple-icon-60x60.png"
+    />
+
+    <!-- For first- and second-generation iPad: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/favicons/apple-icon-72x72.png"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="images/favicons/apple-icon-76x76.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/favicons/apple-icon-114x114.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="images/favicons/apple-icon-120x120.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/favicons/apple-icon-144x144.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="images/favicons/apple-icon-152x152.png"
+    />
+
+    <!-- For iPhone 6 Plus with iOS8. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="180x180"
+      href="images/favicons/apple-icon-180x180.png"
+    />
+
+    <!-- Chrome for Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicons/android-icon-192x192.png"
+    />
+
+    <!-- For Safari on Mac OS. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+
+    <!-- For Google TV. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicons/favicon-96x96.png"
+    />
+
+    <!-- The classic favicon, displayed in the tabs. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- For Windows 8 / IE10. -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>購物明細 | 486團購</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/pages/shoppingDetails.min.css" />
+  </head>
+
+  <body class="cart">
+    <div class="container">
+      <header class="header">
+        <div class="centerBox">
+          <a href="index.htm" class="logo">回首頁</a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="javascript:;" class="icon--search" title="搜尋"
+                  >搜尋</a
+                >
+              </li>
+              <li>
+                <!-- data-items值代表購物車內商品數 --><a
+                  href="shoppingDetails.htm"
+                  class="icon--cart"
+                  data-items="99"
+                  title="購物"
+                  >購物</a
+                >
+              </li>
+              <li>
+                <!-- 有新訊息時加class="has-new" --><a
+                  href="dashboard.htm"
+                  class="icon--user has-new"
+                  title="會員專區"
+                  >登入</a
+                >
+              </li>
+              <li>
+                <a href="javascript:;" class="icon--hamburger" title="選單"
+                  >選單</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="searchInput">
+          <input
+            type="search"
+            name=""
+            id="searchprd"
+            placeholder="搜尋486團購商品"
+            class="form-control"
+          />
+        </div>
+      </header>
+
+      <div class="flowContainer">
+        <ol class="flows">
+          <li>購物明細</li>
+          <li>收件資訊</li>
+          <li>訂購完成</li>
+        </ol>
+      </div>
+
+      <main class="main shoppingDetails">
+        <div class="emptyMsg">
+          <h3>OOPS!</h3>
+          <h4>購物車竟然是空的！</h4>
+          <p>
+            再忙，也記得買點甚麼犒賞自己
+            <a href="index.htm"><strong>去逛逛 </strong></a>
+          </p>
+        </div>
+        <div class="logistics" id="logisticsType">
+          <span class="logistics-item">一般 (29)</span>
+          <span class="logistics-item">預購 (10)</span>
+          <span class="logistics-item">大型 (12)</span>
+          <span class="logistics-item">冷凍 (37)</span>
+          <span class="logistics-item">超商取貨 (39)</span>
+        </div>
+        <div class="cartItems">
+          <div class="media cartItem">
+            <div class="media-left">
+              <a href="pdtView.htm">
+                <!-- srcset提供同比例、不同解析度圖片，固定寬高 -->
+                <img
+                  class="media-object"
+                  srcset="
+                    https://fakeimg.pl/160x160/ 160w,
+                    https://fakeimg.pl/320x320/ 320w
+                  "
+                  sizes="(max-width: 47.9375em) 20vw, 153px"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="javascript:;" class="media-remove">Remove</a>
+              <h4 class="media-heading">
+                <a href="pdtView.htm"
+                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, tempore.</a
+                >
+              </h4>
+              <p class="alert--warning--alt">此商品恕無法配送離島區域</p>
+              <div class="form-group">
+                <label for="" class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="">灰色</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">單價</label>
+                <div class="form-data">
+                  <span class="price-sell">7,800</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                  <p class="alert--danger--alt">
+                    庫存不足!此商品庫存不足，已修改您購買的數量。
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">折價券</label>
+                <div class="form-data">
+                  <div class="form-complex">
+                    <input
+                      type="text"
+                      class="form-complex-control"
+                      placeholder="請輸入折扣碼"
+                      maxlength="10"
+                    />
+                    <button type="button" class="form-complex-btn">使用</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 輸入正確的折扣碼之後，原輸入內容(.from-group)隱藏，改為顯示折扣金額並提供「取消」功能 -->
+              <div class="form-group">
+                <label for="" class="form-label">折扣</label>
+                <div class="form-data">
+                  <div class="checkResult">
+                    <span class="price">200</span>
+                    <button type="button" class="btn--danger">取消</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media cartItem">
+            <div class="media-left">
+              <a href="pdtView.htm">
+                <!-- 提供多種解析度圖片，固定寬高，src為最低解析度，srcset則分別提供不同大小的HD圖片，2x(手機)與3x(平板) -->
+                <img
+                  class="media-object"
+                  srcset="
+                    https://fakeimg.pl/160x160/ 160w,
+                    https://fakeimg.pl/320x320/ 320w
+                  "
+                  sizes="(max-width: 47.9375em) 20vw, 153px"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="javascript:;" class="media-remove">Remove</a>
+              <h4 class="media-heading">
+                <a href="pdtView.htm">Lorem ipsum dolor sit amet.</a>
+              </h4>
+              <div class="form-group">
+                <label for="" class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="">灰色</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">單價</label>
+                <div class="form-data">
+                  <span class="price-sell">7,800</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">折價券</label>
+                <div class="form-data">
+                  <div class="form-complex">
+                    <input
+                      type="text"
+                      class="form-complex-control"
+                      placeholder="請輸入折扣碼"
+                      maxlength="10"
+                    />
+                    <button type="button" class="form-complex-btn">使用</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media cartItem">
+            <div class="media-left">
+              <img
+                class="media-object"
+                srcset="
+                  https://fakeimg.pl/160x160/ 160w,
+                  https://fakeimg.pl/320x320/ 320w
+                "
+                sizes="(max-width: 47.9375em) 20vw, 153px"
+                alt=""
+              />
+            </div>
+            <div class="media-body">
+              <a href="javascript:;" class="media-remove">Remove</a>
+              <h4 class="media-heading">
+                【全館滿額贈品】英國小綠原廠專用濾心
+              </h4>
+              <div class="form-group">
+                <label for="" class="form-label">規格</label>
+                <div class="form-data">單一規格</div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">單價</label>
+                <div class="form-data">
+                  <span class="price-sell">0</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="addon">
+          <h2 class="section-title">
+            加購商品區<small>(欲加購請直接點選圖片)</small>
+          </h2>
+          <div class="addon-items">
+            <div class="item">
+              <label>
+                <input type="checkbox" name="" id="" class="chkbox" />
+                <span
+                  ><img
+                    srcset="
+                      https://fakeimg.pl/160x160/ 160w,
+                      https://fakeimg.pl/320x320/ 320w,
+                      https://fakeimg.pl/640x640/ 640w
+                    "
+                    sizes="(max-width: 47.9375em) 40vw, 160px"
+                    alt=""
+                /></span>
+              </label>
+              <small class="pdtSubName"
+                >★ 可聲控LG家電．限量加購價699 (原價3190)</small
+              >
+              <p class="pdtName">Lorem ipsum dolor sit amet.</p>
+              <p class="price-original">480</p>
+              <p class="price-sell">1,480</p>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group spec">
+                <label class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>Gtech Multi Lux(剩1219)</option>
+                    <option value="">Gtech Multi Std(剩100)</option>
+                    <option value="">Gtech Multi Pro(剩219)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <label>
+                <input type="checkbox" name="" id="" class="chkbox" />
+                <span
+                  ><img
+                    srcset="
+                      https://fakeimg.pl/160x160/ 160w,
+                      https://fakeimg.pl/320x320/ 320w,
+                      https://fakeimg.pl/640x640/ 640w
+                    "
+                    sizes="(max-width: 47.9375em) 40vw, 160px"
+                    alt=""
+                /></span>
+              </label>
+              <small class="pdtSubName"
+                >★ 可聲控LG家電．限量加購價699 (原價3190)</small
+              >
+              <p class="pdtName">Lorem ipsum dolor sit amet.</p>
+              <p class="price-original">480</p>
+              <p class="price-sell">1,480</p>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group spec">
+                <label class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>Gtech Multi Lux(剩1219)</option>
+                    <option value="">Gtech Multi Std(剩100)</option>
+                    <option value="">Gtech Multi Pro(剩219)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <label>
+                <input type="checkbox" name="" id="" class="chkbox" />
+                <span
+                  ><img
+                    srcset="
+                      https://fakeimg.pl/160x160/ 160w,
+                      https://fakeimg.pl/320x320/ 320w,
+                      https://fakeimg.pl/640x640/ 640w
+                    "
+                    sizes="(max-width: 47.9375em) 40vw, 160px"
+                    alt=""
+                /></span>
+              </label>
+              <small class="pdtSubName"
+                >★ 可聲控LG家電．限量加購價699 (原價3190)</small
+              >
+              <p class="pdtName">Lorem ipsum dolor sit amet.</p>
+              <p class="price-original">480</p>
+              <p class="price-sell">1,480</p>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group spec">
+                <label class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>Gtech Multi Lux(剩1219)</option>
+                    <option value="">Gtech Multi Std(剩100)</option>
+                    <option value="">Gtech Multi Pro(剩219)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <label>
+                <input type="checkbox" name="" id="" class="chkbox" />
+                <span
+                  ><img
+                    srcset="
+                      https://fakeimg.pl/160x160/ 160w,
+                      https://fakeimg.pl/320x320/ 320w,
+                      https://fakeimg.pl/640x640/ 640w
+                    "
+                    sizes="(max-width: 47.9375em) 40vw, 160px"
+                    alt=""
+                /></span>
+              </label>
+              <small class="pdtSubName"
+                >★ 可聲控LG家電．限量加購價699 (原價3190)</small
+              >
+              <p class="pdtName">Lorem ipsum dolor sit amet.</p>
+              <p class="price-original">480</p>
+              <p class="price-sell">1,480</p>
+              <div class="form-group">
+                <label for="" class="form-label">數量</label>
+                <div class="form-data">
+                  <div class="quantityInput">
+                    <button type="button" class="btnMinus">-</button>
+                    <input type="text" class="value" value="1" readonly />
+                    <button type="button" class="btnPlus">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group spec">
+                <label class="form-label">規格</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="" selected>Gtech Multi Lux(剩1219)</option>
+                    <option value="">Gtech Multi Std(剩100)</option>
+                    <option value="">Gtech Multi Pro(剩219)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="balance">
+          <ul>
+            <li>
+              <span class="label">小計</span><span class="price">15,900</span>
+            </li>
+            <li>
+              <span class="label">折扣</span><span class="price">200</span>
+            </li>
+            <li><span class="label">運費</span><span class="price">-</span></li>
+            <li>
+              <span class="label">滿額折扣</span><span class="price">100</span>
+            </li>
+            <li>
+              <span class="label">總金額</span><span class="price">16,100</span>
+            </li>
+          </ul>
+          <div class="callToAction">
+            <button
+              type="submit"
+              class="modal-trigger"
+              data-ripple
+              data-modal="#guestModal"
+            >
+              立即結帳
+            </button>
+          </div>
+        </div>
+        <div class="notice">
+          <h3 class="notice-heading">注意事項</h3>
+          <div>
+            <!-- 自由編輯 -->Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Ipsa error vel tempore, quam sequi, ad facilis cumque
+            similique excepturi optio est, natus aut porro incidunt. Maiores
+            sapiente distinctio, iusto soluta!
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="centerBox">
+          <!-- 2017-09-01 新增div.quickLinksContainer -->
+          <div class="quickLinksContainer">
+            <div class="quickLinks serviceGuide">
+              <h3>服務說明</h3>
+              <ul>
+                <li><a href="privacyPolicy.htm">隱私權政策</a></li>
+                <li><a href="serviceTerms.htm">服務條款</a></li>
+                <li><a href="faq.htm">常見問題</a></li>
+                <li><a href="howToCancelOrder.htm">如何取消訂單</a></li>
+                <li><a href="howToReturnGoods.htm">如何退換貨</a></li>
+                <!-- 2017-12-26 新增「如何分享心得」 -->
+                <li><a href="howToReviews.htm">如何分享心得</a></li>
+              </ul>
+            </div>
+            <div class="quickLinks contact">
+              <h3>連絡我們</h3>
+              <ul>
+                <li><a href="serviceLine.htm">展示中心</a></li>
+                <!-- <li><a href="contactUs.htm">連絡我們</a></li> -->
+                <li><a href="vendorProposal.htm">廠商提案</a></li>
+              </ul>
+            </div>
+            <div class="quickLinks aboutUs">
+              <h3>關於我們</h3>
+              <ul>
+                <li><a href="about486Shop.htm">關於486團購</a></li>
+                <!-- <li><a href="javascript:;">486社會責任</a></li> -->
+                <li><a href="mediaReportsList.htm">媒體報導</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="socialShare">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKK486%2FCBIO34Pd7TVC6w&tabs=timeline&width=280&height=244&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="295"
+              height="244"
+              class="fb"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+            ></iframe>
+            <!-- <a href="https://line.me/R/ti/p/%40aov6537w" class="line">486團購</a> -->
+            <a
+              href="https://pse.is/486YT"
+              class="youtube"
+              target="_blank"
+              rel="noopener"
+              >Youtube</a
+            >
+          </div>
+          <p class="copyright">
+            &copy;2016&nbsp;包昇數位文化有限公司&nbsp;版權所有
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-overlay">
+      <svg id="svg"></svg>
+    </div>
+    <div class="modal guestModal" id="guestModal">
+      <div class="modal-dialog">
+        <h2 class="modal-head">您尚未登入會員</h2>
+        <section class="modal-body">
+          <ul class="tabs">
+            <li class="active">會員登入</li>
+            <li>忘記密碼</li>
+            <li>加入會員</li>
+          </ul>
+          <div class="form multiForm">
+            <div class="form-group email">
+              <label for="email" class="form-label">E-mail</label>
+              <div class="form-data">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="請輸入已註冊會員的email"
+                />
+              </div>
+            </div>
+            <div class="form-group passwd">
+              <label for="passwd" class="form-label">密碼</label>
+              <div class="form-data">
+                <span class="eye"></span>
+                <input
+                  type="password"
+                  name="passwd"
+                  id="passwd"
+                  class="form-control"
+                  placeholder="限4-12位英數字"
+                  maxlength="12"
+                />
+              </div>
+            </div>
+            <div class="form-group mobilePhone">
+              <label for="mobilePhone" class="form-label">手機</label>
+              <div class="form-data">
+                <input
+                  type="tel"
+                  name="mobilePhone"
+                  id="mobilePhone"
+                  class="form-control"
+                  placeholder="格式：0935123456"
+                />
+              </div>
+            </div>
+            <div class="form-group checkbox agreement">
+              <label>
+                <input type="checkbox" name="" id="" class="form-control" />
+                <span
+                  >本人已詳讀並同意遵守486團購網站會員條款( 包含網站<a
+                    href="privacyPolicy.htm"
+                    >隱私權政策</a
+                  >與<a href="termsofService.htm">服務條款</a>)
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btnMemberSubmit" data-ripple>
+              登入
+            </button>
+          </div>
+          <div class="socialLogin">
+            <a href="javascript:;" class="fb" data-ripple>Facebook登入</a>
+            <a href="javascript:;" class="googleplus" data-ripple
+              >Google+登入</a
+            >
+          </div>
+          <button type="button" class="btnFirstTime" data-ripple>
+            首次購物由此進
+          </button>
+        </section>
+      </div>
+    </div>
+    <div class="navModal">
+      <span class="navModal-close"></span>
+      <!-- 當前頁面所在類別套用class="active" -->
+      <div class="navMenu active">
+        <h3>會員專區</h3>
+        <ul>
+          <!-- 登入前 -->
+          <li>
+            <!-- 當前頁面a套用class="active" -->
+            <a href="guest.htm?t=0" class="active">會員登入</a>
+          </li>
+          <li><a href="guest.htm?t=1">忘記密碼</a></li>
+          <li><a href="guest.htm?t=2">加入會員</a></li>
+          <!-- 登入後 -->
+          <li><a href="orderQuery.htm">訂單查詢</a></li>
+          <li><a href="wishList.htm">願望清單</a></li>
+          <li><a href="queryHistory.htm">商品提問記錄</a></li>
+          <li><a href="reviewsList.htm">心得分享</a></li>
+          <li><a href="coupon.htm">折價券</a></li>
+          <li><a href="inbox.htm">系統信件</a></li>
+          <li><a href="memberProfile.htm">會員資料修改</a></li>
+          <li><a href="passwd.htm">密碼修改</a></li>
+          <li><a href="addressee.htm">常用收件人</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3><a href="pdtList.htm">商品團購</a></h3>
+        <ul>
+          <li><a href="pdtList.htm">永日文創</a></li>
+          <li><a href="pdtList.htm">搬新辦公室大清倉</a></li>
+          <li><a href="pdtList.htm">獨家好物</a></li>
+          <li><a href="pdtList.htm">極。鐵鍋專區</a></li>
+          <li><a href="pdtList.htm">Gtech Multi 小綠專區</a></li>
+          <li><a href="pdtList.htm">美食朵頤</a></li>
+          <li><a href="pdtList.htm">激賞人氣商品</a></li>
+          <li><a href="pdtList.htm">暖冬必備</a></li>
+          <li><a href="pdtList.htm">地板清潔</a></li>
+          <li><a href="pdtList.htm">空氣清淨</a></li>
+          <li><a href="pdtList.htm">光觸媒除甲醛專區</a></li>
+          <li><a href="pdtList.htm">安心喝水</a></li>
+          <li><a href="pdtList.htm">涼快一夏</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3><a href="pdtList.htm">消耗品配件區</a></h3>
+        <ul>
+          <li><a href="pdtList.htm">Item</a></li>
+          <li><a href="pdtList.htm">Item</a></li>
+          <li><a href="pdtList.htm">Item</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3>任選館</h3>
+        <ul>
+          <li><a href="freeToChoose.htm">類別一</a></li>
+          <li><a href="freeToChoose.htm">類別二</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="js/pages/shoppingDetails.js?v=1"
+    ></script>
+  </body>
+</html>

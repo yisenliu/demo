@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no,  minimal-ui"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Used by IE, and also by some other browsers if we are not careful. -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- For new browsers - multisize ico  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- Same as apple-touch-icon.png, expect that is already have rounded corners (but neither drop shadow nor gloss effect). -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicons/apple-touch-icon-precomposed.png"
+    />
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/favicons/apple-icon-57x57.png"
+    />
+
+    <!-- For non-retina iPhone with iOS7. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="images/favicons/apple-icon-60x60.png"
+    />
+
+    <!-- For first- and second-generation iPad: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/favicons/apple-icon-72x72.png"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="images/favicons/apple-icon-76x76.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/favicons/apple-icon-114x114.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="images/favicons/apple-icon-120x120.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/favicons/apple-icon-144x144.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="images/favicons/apple-icon-152x152.png"
+    />
+
+    <!-- For iPhone 6 Plus with iOS8. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="180x180"
+      href="images/favicons/apple-icon-180x180.png"
+    />
+
+    <!-- Chrome for Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicons/android-icon-192x192.png"
+    />
+
+    <!-- For Safari on Mac OS. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+
+    <!-- For Google TV. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicons/favicon-96x96.png"
+    />
+
+    <!-- The classic favicon, displayed in the tabs. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- For Windows 8 / IE10. -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>訂單明細 | 486團購</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/pages/orderView.min.css" />
+  </head>
+
+  <body class="member">
+    <div class="container">
+      <header class="header2">
+        <div class="header2-wrap">
+          <div class="header2-left">
+            <a href="orderQuery.htm" class="header2-back"></a>
+          </div>
+          <div class="header2-middle">訂單明細</div>
+          <div class="header2-right">
+            <button type="button" class="btnCTA">再次購買</button>
+          </div>
+        </div>
+      </header>
+      <main class="main orderView">
+        <ul class="orderFuncs">
+          <li>
+            <a href="ajax-qa.htm" data-modal="#ajaxModal" class="qa">問與答</a>
+          </li>
+          <li>
+            <a
+              href="ajax-orderCancel.htm"
+              data-modal="#ajaxModal"
+              class="orderCancel"
+              >取消訂單</a
+            >
+          </li>
+          <!-- 2017-12-26 移除<li><a href="javascript:;" class="orderPrint">列印訂單</a></li> -->
+          <li><a href="javascript:;" class="receiptPrint">列印購買證明</a></li>
+        </ul>
+        <section class="section">
+          <div class="receiver">
+            <div class="form-group">
+              <label class="form-label">收件人</label>
+              <div class="form-data">**妮</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">市話</label>
+              <div class="form-data">02-27821111</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">手機</label>
+              <div class="form-data">0935-***456</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">地址</label>
+              <div class="form-data">台北市南港區****20號6樓</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">備註</label>
+              <div class="form-data">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                minima, incidunt autem reprehenderit ad quas at!
+              </div>
+            </div>
+          </div>
+          <div class="card package">
+            <ul class="package-header">
+              <li>
+                配送方式
+                <p>宅急便</p>
+              </li>
+              <li>
+                包裹編號
+                <p>3401272992</p>
+              </li>
+              <li>
+                退換貨包裹編號
+                <p>3401272992</p>
+              </li>
+              <!-- 2017-09-01 新增li.package-status -->
+              <li class="package-status">理貨中 2017-08-30 17:33:59</li>
+            </ul>
+            <div style="text-align: center; margin: 1em 0">
+              訂單配送進度僅供參考，實際配送結果請以各物流官網查詢為準
+            </div>
+            <!-- 依據訂單處理進度套用class=step1~step6 -->
+            <ul class="package-progress step1">
+              <li>訂單成立<span>2016-12-18 17:33:59</span></li>
+              <li>付款完成<span>2016-12-19 17:33:59</span></li>
+              <li>訂單處理中<span>2016-12-20 17:33:59</span></li>
+              <li>理貨<span>2016-12-21 17:33:59</span></li>
+              <li>已出貨<span>2016-12-22 17:33:59</span></li>
+              <li>配送完成<span>2016-12-23 17:33:59</span></li>
+            </ul>
+            <div class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  【結帳現折】獨家 PINOH 高效淨化空氣清淨機 超級大王 DA-A1001RW
+                </h4>
+                <div class="form-group">
+                  <label class="form-label">規格</label>
+                  <div class="form-data">灰色</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">單價</label>
+                  <div class="form-data">
+                    <span class="price-gray">7,800</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">數量</label>
+                  <div class="form-data">99</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">折扣</label>
+                  <div class="form-data">
+                    <span class="price-gray">200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card package">
+            <ul class="package-header">
+              <li>
+                配送方式
+                <p>宅急便</p>
+              </li>
+              <li>
+                包裹編號
+                <p>3401272992</p>
+              </li>
+              <li>
+                退換貨包裹編號
+                <p>3401272992</p>
+              </li>
+              <li class="package-status">理貨中 2017-08-30 17:33:59</li>
+            </ul>
+            <ul class="package-progress step3">
+              <li>訂單成立<span>2016-12-18</span></li>
+              <li>付款完成<span>2016-12-19</span></li>
+              <li>訂單處理中<span>2016-12-20</span></li>
+              <li>理貨<span>2016-12-21</span></li>
+              <li>已出貨<span>2016-12-22</span></li>
+              <li>配送完成<span>2016-12-23</span></li>
+            </ul>
+            <div class="media">
+              <div class="media-body">
+                <h4 class="media-heading">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, tempore.
+                </h4>
+                <div class="form-group">
+                  <label class="form-label">規格</label>
+                  <div class="form-data">紅色</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">單價</label>
+                  <div class="form-data">
+                    <span class="price-gray">7,800</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">數量</label>
+                  <div class="form-data">99</div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">折扣</label>
+                  <div class="form-data">
+                    <span class="price-gray">200</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal-overlay">
+      <svg id="svg"></svg>
+    </div>
+    <div id="ajaxModal" class="modal">
+      <div class="modal-dialog">
+        <!-- ajax-content here -->
+      </div>
+    </div>
+    <!-- <div class="receipt">
+    <h3>購買證明</h3>
+    <div class="certification">
+      <img src="images/logo.svg" alt="">
+      <img src="images/warranty_stamp.png" alt="">
+    </div>
+    <ul class="storeInfo">
+      <li>包昇數位文化有限公司</li>
+      <li>營業人地址：台北市民生東路三段113巷6弄21號1樓</li>
+    </ul>
+    <ul class="receiptInfo">
+      <li>訂單編號：20171220130500260</li>
+      <li>發票號碼：YD81069312</li>
+      <li>隨機碼：1234</li>
+      <li>出貨日期：2017/12/25</li>
+    </ul>
+    <div class="shoppingList">
+      <table>
+        <thead>
+          <tr>
+            <th>品名</th>
+            <th>數量</th>
+            <th>單價</th>
+            <th>金額</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              <p>總計：<span>$21,064</span></p>
+              <p>合計：<span>2項</span></p>
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+            <td>2</td>
+            <td>8,688</td>
+            <td>17,376</td>
+          </tr>
+          <tr>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nemo quam, quibusdam!</td>
+            <td>1</td>
+            <td>3,688</td>
+            <td>3,688</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="notice">
+      <p>*此訂單為會員在486團購網購買商品之明細。</p>
+      <p>*商品一經退貨，此訂單視同無效</p>
+    </div>
+  </div> -->
+    <script src="js/bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/pages/orderView.js?v=1"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* 本案已由UCD(以使用者為中心的設計)變質為CCD(以客戶意見為中心的設計) */
+/* 本案已由UCD(以使用者為中心的設計)變質為CCD(以客戶意見為中心的設計) */
+/* 本案已由UCD(以使用者為中心的設計)變質為CCD(以客戶意見為中心的設計) */
+/* 很重要！所以說三遍。 */
+
+
+/* TEAM */
+  Company: 匯豐汽車網路事業
+  Website: http://ciao.30888.com.tw
+  Contact: (02)2782-1111 ext.6906,6907,6908
+  Address: 台北市成功路一段36巷20號6樓
+
+  PM: 黃詩涵
+  Contact: (02)2782-1111 ext.6907
+
+  VD / F2E: Yisen
+  Facebook: http://www.facebook.com/yisen838
+  Profile: http://yisenliu.github.io/works/
+  Contact: (02)2782-1111 ext.6905
+
+  SEO / Back-end: 嚴福斌
+  Contact: (02)2782-1111 ext.6904
+
+/* SITE */
+  Last update: 2016/09/01
+  Language: Chinese
+  Doctype: HTML5
+  Device support: mobile / desktop
+  Breakpoints: 768
+  Browser support:  Windows (IE 11, Firefox 48, Chrome 52),
+                    iOS 9+ (Safari, Chrome), 
+                    Android 4.4+ (Chrome)
+  Resolution: -
+  Package:  headroom, 
+            jquery 2.1.4, 
+            jquery.browser 0.0.7, 
+            jquery.ripple 0.2.1, 
+            /*jquery.validate 1.13.0, */
+            jReject 1.1.4, 
+            js-url 1.8.8, 
+            owlcarousel 1.3.2, 
+            picturefill 3.0.2,
+            Snap.svg 0.4.1,
+            datepicker 0.4.0
+  IDE:  Sublime Text, 
+        Node.js, 
+        Photoshop, 
+        Illustrator

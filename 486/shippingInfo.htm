@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no,  minimal-ui"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Used by IE, and also by some other browsers if we are not careful. -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- For new browsers - multisize ico  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+      href="images/favicons/favicon.ico"
+    />
+
+    <!-- Same as apple-touch-icon.png, expect that is already have rounded corners (but neither drop shadow nor gloss effect). -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicons/apple-touch-icon-precomposed.png"
+    />
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/favicons/apple-icon-57x57.png"
+    />
+
+    <!-- For non-retina iPhone with iOS7. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="images/favicons/apple-icon-60x60.png"
+    />
+
+    <!-- For first- and second-generation iPad: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/favicons/apple-icon-72x72.png"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="images/favicons/apple-icon-76x76.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/favicons/apple-icon-114x114.png"
+    />
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="images/favicons/apple-icon-120x120.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/favicons/apple-icon-144x144.png"
+    />
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="images/favicons/apple-icon-152x152.png"
+    />
+
+    <!-- For iPhone 6 Plus with iOS8. -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="180x180"
+      href="images/favicons/apple-icon-180x180.png"
+    />
+
+    <!-- Chrome for Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/favicons/android-icon-192x192.png"
+    />
+
+    <!-- For Safari on Mac OS. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+
+    <!-- For Google TV. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/favicons/favicon-96x96.png"
+    />
+
+    <!-- The classic favicon, displayed in the tabs. -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- For Windows 8 / IE10. -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>收件資訊 | 486團購</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/pages/shippingInfo.min.css" />
+  </head>
+
+  <body class="cart">
+    <div class="container">
+      <header class="header">
+        <div class="centerBox">
+          <a href="index.htm" class="logo">回首頁</a>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="javascript:;" class="icon--search" title="搜尋"
+                  >搜尋</a
+                >
+              </li>
+              <li>
+                <!-- data-items值代表購物車內商品數 --><a
+                  href="shoppingDetails.htm"
+                  class="icon--cart"
+                  data-items="99"
+                  title="購物"
+                  >購物</a
+                >
+              </li>
+              <li>
+                <!-- 有新訊息時加class="has-new" --><a
+                  href="dashboard.htm"
+                  class="icon--user has-new"
+                  title="會員專區"
+                  >登入</a
+                >
+              </li>
+              <li>
+                <a href="javascript:;" class="icon--hamburger" title="選單"
+                  >選單</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="searchInput">
+          <input
+            type="search"
+            name=""
+            id="searchprd"
+            placeholder="搜尋486團購商品"
+            class="form-control"
+          />
+        </div>
+      </header>
+
+      <div class="flowContainer">
+        <ol class="flows">
+          <li>購物明細</li>
+          <li>收件資訊</li>
+          <li>訂購完成</li>
+        </ol>
+      </div>
+
+      <main class="main shippingInfo">
+        <section class="section">
+          <h2 class="section-title">首次購物請先設定登入資料</h2>
+          <div class="form">
+            <div class="form-group">
+              <label for="email" class="form-label required">E-mail</label>
+              <div class="form-data">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="此e-mail即為您的會員帳號"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passwd" class="form-label required">設定密碼</label>
+              <div class="form-data">
+                <span class="eye"></span>
+                <input
+                  type="password"
+                  name="passwd"
+                  id="passwd"
+                  class="form-control"
+                  placeholder="限4-12位英數字"
+                  maxlength="12"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="section-title">收件人</h2>
+          <a
+            href="javascript:;"
+            class="fromAddressee"
+            data-modal="#addresseeModal"
+            >(選擇常用收件人)</a
+          >
+          <div class="form-group">
+            <label for="receiver" class="form-label required">姓名</label>
+            <div class="form-data">
+              <input
+                type="text"
+                name="receiver"
+                id="receiver"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="localPhone" class="form-label">市話</label>
+            <div class="form-data">
+              <input
+                type="tel"
+                name="localPhone"
+                id="localPhone"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="form-group mobilePhone">
+            <label for="mobilePhone" class="form-label required">手機</label>
+            <div class="form-data">
+              <input
+                type="tel"
+                name="mobilePhone"
+                id="mobilePhone"
+                class="form-control"
+                placeholder="格式：0935123456"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group mobilePhone">
+            <label for="comments" class="form-label">備註</label>
+            <div class="form-data">
+              <textarea
+                name="comments"
+                id="comments"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+        <!-- replace on 2019-11-11 start-->
+        <section class="section">
+          <h2 class="section-title">選擇送貨方式</h2>
+          <div class="form-group">
+            <div class="radio-inline">
+              <label>
+                <input
+                  type="radio"
+                  name="howToPickUp"
+                  data-rel="pickUpByDelivery"
+                  checked
+                /><span>宅配</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="howToPickUp"
+                  data-rel="pickUpBySuper"
+                />
+                <span>全家取貨</span>
+                <a href="javascript:;" target="_blank" rel="noopener"
+                  ><span class="label--info">活動</span>選擇超取抽50塊購物金
+                </a>
+              </label>
+            </div>
+            <div rel="pickUpByDelivery" class="active">
+              <div class="form-group address">
+                <label for="" class="form-label required">宅配地址</label>
+                <div class="form-data">
+                  <input
+                    type="text"
+                    name=""
+                    value="123"
+                    id=""
+                    class="form-control zipCode"
+                    readonly
+                  />
+                  <select name="" id="" class="form-control">
+                    <option value="">台北市</option>
+                    <option value="">台中市</option>
+                  </select>
+                  <select name="" id="" class="form-control">
+                    <option value="">大安區</option>
+                    <option value="">中山區</option>
+                  </select>
+                  <input
+                    type="text"
+                    name="address"
+                    id=""
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div rel="pickUpBySuper">
+              <p class="reminder">
+                提醒您，若您累積三次逾期未取，一年內將無法使用超取服務，請珍惜您的會員權益
+              </p>
+              <!-- 未選擇超商 start -->
+              <div class="form-group">
+                <label for="" class="form-label">請選擇門市</label>
+                <div class="form-data">
+                  <button type="button" class="btn--primary">依地圖選擇</button>
+                </div>
+              </div>
+              <!-- 未選擇超商 end -->
+
+              <!-- 已選擇超商 start -->
+              <div class="form-group">
+                <span for="" class="form-label">門市名稱</span>
+                <div class="form-data selectedStore">
+                  <span class="storeName">新盛昌</span>
+                  <button type="button" class="btn--primary">變更門市</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <span for="" class="form-label">門市地址</span>
+                <div class="form-data">新北市汐止區長江街13巷1號</div>
+              </div>
+              <!-- 已選擇超商 end -->
+            </div>
+          </div>
+        </section>
+        <!-- replace on 2019-11-11 end-->
+
+        <section class="section">
+          <h2 class="section-title">選擇付款方式</h2>
+          <div class="form-group">
+            <div class="radio-inline">
+              <label>
+                <input
+                  type="radio"
+                  name="howToPay"
+                  data-rel="payByCreditCard"
+                  checked
+                /><span>信用卡</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="howToPay"
+                  data-rel="payBySuper"
+                /><span>超商</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="howToPay"
+                  data-rel="payByWebATM"
+                /><span>ATM</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="howToPay"
+                  data-rel="payByMobile"
+                /><span>行動支付</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="howToPay"
+                  data-rel="payByInstallments"
+                /><span>樂分期</span>
+              </label>
+            </div>
+            <div rel="payByCreditCard" class="active">
+              <div class="form-group issuingBank">
+                <label class="form-label">選擇發卡銀行</label>
+                <div class="form-data">
+                  <select name="" id="" class="form-control">
+                    <option value="">請選擇</option>
+                    <option value="">國泰世華</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payment" id="" />
+                    <span>一次付清</span>
+                  </label>
+                  <div class="creditCardInfo">
+                    <h3>輸入信用卡資料</h3>
+                    <a href="javascript:;" class="tss" data-modal="#TSSModal"
+                      >交易安全聲明</a
+                    >
+                    <div class="form-group">
+                      <label class="form-label" for="">姓名</label>
+                      <div class="form-data">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="">輸入信用卡號</label>
+                      <div class="form-data">
+                        <input type="tel" maxlength="16" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="">信用卡背面末3碼</label>
+                      <div class="form-data">
+                        <input type="tel" maxlength="3" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group validDates">
+                      <label class="form-label" for="">請輸入有效期限</label>
+                      <div class="form-data">
+                        <select class="form-control" name="" id="">
+                          <optgroup label="月份">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                          </optgroup>
+                        </select>
+                        <span>&#47;</span>
+                        <select class="form-control" name="" id="">
+                          <optgroup label="年份">
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payment" id="" />
+                    <span>3期0利率 (3期x12345元)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payment" id="" />
+                    <span>6期0利率 (3期x12345元)</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div rel="payByWebATM">不支援臨櫃轉帳</div>
+            <div rel="payByInstallments">
+              <label class="form-label">請選擇期數</label>
+              <div class="form-data">
+                <select name="" id="" class="form-control">
+                  <option value="">3期</option>
+                  <option value="">6期</option>
+                </select>
+                <a href="javascript:;" target="_blank" class="transactionGuide"
+                  >交易說明</a
+                >
+              </div>
+            </div>
+            <div rel="payBySuper">
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payBySuper" id="" checked />
+                    <span>
+                      全家取貨付款
+                      <em
+                        >您的商品將寄至您所選擇便利商店，商品到達時會以簡訊通知您取件，您在取件的同時再付款即可。</em
+                      >
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payBySuper" id="" />
+                    <span>
+                      超商代碼繳費 (此支付方式需收20元手續費)
+                      <em
+                        >送出訂單後，系統會依照您選擇的超商，給予一組繳費代碼，如選擇7-11，請至ibon輸入繳費代碼，機台會列印出單據給您，再持單至櫃台付費即完成訂單；如選擇全家或萊爾富，可直接至櫃台付費即完成訂單。</em
+                      >
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div rel="payByMobile">
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payByMobile" id="" checked />
+                    <span>
+                      LINE PAY
+                      <em
+                        >可使用LINE Points折抵消費！ 1點折抵1元，
+                        折抵無上限。</em
+                      >
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payByMobile" id="" />
+                    <span>
+                      GOOGLE PAY
+                      <em>信用卡綁定即可付款，快速又簡單！</em>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payByMobile" id="" />
+                    <span>
+                      APPLE PAY
+                      <em>信用卡綁定即可付款，快速又簡單！ </em>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payByMobile" id="" />
+                    <span>
+                      SAMSUNG PAY
+                      <em>信用卡綁定即可付款，快速又簡單！ </em>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="payByMobile" id="" />
+                    <span>
+                      PI 拍錢包
+                      <em>可使用 P幣折抵消費！1P幣抵1元，折抵無上限。 </em>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">選擇發票類型</h2>
+          <div class="form-group">
+            <div class="radio-inline">
+              <label>
+                <input
+                  type="radio"
+                  name="types"
+                  data-rel="invoice-2"
+                  class="invoice-2"
+                  checked
+                /><span>二聯式</span></label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="types"
+                  data-rel="invoice-3"
+                  class="invoice-3"
+                /><span>三聯式</span></label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="types"
+                  data-rel="invoice-donate"
+                  class="invoice-donate"
+                /><span>捐贈發票</span></label
+              >
+            </div>
+            <!-- 個人發票 -->
+            <div rel="invoice-2" class="active">
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="invoice-2" checked /><span
+                      >486會員載具 (由486團購幫您對獎，中獎後主動通知)</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="invoice-2" /><span
+                      >手機條碼載具</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control mobileCode"
+                      disabled /><span class="sampleImg"
+                      >範例圖片<img
+                        srcset="
+                          images/mobileCode@1x.jpg 1x,
+                          images/mobileCode@2x.jpg 2x
+                        "
+                        sizes="100%"
+                        alt="" /></span
+                  ></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="invoice-2" /><span
+                      >自然人憑證載具</span
+                    >
+                    <input type="text" class="form-control CDC" disabled /><span
+                      class="sampleImg"
+                      >範例圖片<img
+                        srcset="images/CDC@1x.jpg 1x, images/CDC@2x.jpg 2x"
+                        sizes="100%"
+                        alt="" /></span
+                  ></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="invoice-2" /><span
+                      >索取紙本發票</span
+                    >
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">收件人</label>
+                  <div class="form-data">
+                    <input type="text" class="form-control" disabled />
+                  </div>
+                </div>
+                <div class="form-group address">
+                  <label class="form-label">地址</label>
+                  <div class="form-data">
+                    <select class="form-control" name="county" id="" disabled>
+                      <option value="">台北市</option>
+                      <option value="">台中市</option>
+                    </select>
+                    <select class="form-control" name="district" id="" disabled>
+                      <option value="">大安區</option>
+                      <option value="">松山區</option>
+                    </select>
+                    <input
+                      type="text"
+                      name="address"
+                      class="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">聯絡電話</label>
+                  <div class="form-data">
+                    <input type="tel" class="form-control" disabled />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 公司用三聯式發票 -->
+            <div rel="invoice-3">
+              <div class="form-group">
+                <label class="form-label" for="">發票抬頭</label>
+                <div class="form-data">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="">統一編號</label>
+                <div class="form-data">
+                  <input type="tel" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group address">
+                <label class="form-label" for="">地址</label>
+                <div class="form-data">
+                  <select class="form-control" name="county" id="">
+                    <option value="">台北市</option>
+                  </select>
+                  <select class="form-control" name="district" id="">
+                    <option value="">大安區</option>
+                  </select>
+                  <input type="text" name="address" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <!-- 捐贈發票 -->
+            <div rel="invoice-donate">
+              <div class="form-group">
+                <label class="form-label" for="">捐贈單位</label>
+                <div class="form-data">
+                  <select class="form-control" name="" id="">
+                    <option value="">創世基金會</option>
+                    <option value="">華山文創基金會</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" class="form-control" /><span
+                  >我同意退貨時，依照包昇數位文化有限公司退貨退款流程，需正本簽回銷貨退回折讓單，以加速退貨退款作業。<br />依統一發票使用辦法規定：個人(二聯式)發票一經開立不得任意更改或改開公司戶(三聯式)發票。<a
+                    href="https://www.einvoice.nat.gov.tw/"
+                    target="_blank"
+                    >[財政部電子發票流程說明]</a
+                  ></span
+                >
+              </label>
+            </div>
+          </div>
+        </section>
+        <div class="panel">
+          <div class="panel-heading">購物明細</div>
+          <div class="panel-body">
+            <div class="item">
+              <h4 class="heading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+                tempore.
+              </h4>
+              <div>
+                <span class="label">規格</span>
+                <div class="data">灰色</div>
+              </div>
+              <div>
+                <span class="label">單價</span>
+                <div class="data"><span class="price-gray">7,800</span></div>
+              </div>
+              <div>
+                <span class="label">數量</span>
+                <div class="data">3</div>
+              </div>
+              <div>
+                <span class="label">折扣</span>
+                <div class="data"><span class="price-gray">200</span></div>
+              </div>
+            </div>
+            <div class="item">
+              <h4 class="heading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+                tempore.
+              </h4>
+              <div>
+                <span class="label">規格</span>
+                <div class="data">灰色</div>
+              </div>
+              <div>
+                <span class="label">單價</span>
+                <div class="data"><span class="price-gray">7,800</span></div>
+              </div>
+              <div>
+                <span class="label">數量</span>
+                <div class="data">3</div>
+              </div>
+              <div>
+                <span class="label">折扣</span>
+                <div class="data"><span class="price-gray">200</span></div>
+              </div>
+            </div>
+            <div class="balance">
+              <ul>
+                <li>
+                  <span class="label">小計</span
+                  ><span class="price">15,900</span>
+                </li>
+                <li>
+                  <span class="label">折扣</span><span class="price">200</span>
+                </li>
+                <li>
+                  <span class="label">運費</span><span class="price">-</span>
+                </li>
+                <li>
+                  <span class="label">總金額</span
+                  ><span class="price">16,100</span>
+                </li>
+              </ul>
+              <div class="callToAction">
+                <a href="shoppingDetails.htm" class="btn--secondary"
+                  >購物明細</a
+                >
+                <button type="submit" class="btn--primary" data-ripple>
+                  送出訂單
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="centerBox">
+          <!-- 2017-09-01 新增div.quickLinksContainer -->
+          <div class="quickLinksContainer">
+            <div class="quickLinks serviceGuide">
+              <h3>服務說明</h3>
+              <ul>
+                <li><a href="privacyPolicy.htm">隱私權政策</a></li>
+                <li><a href="serviceTerms.htm">服務條款</a></li>
+                <li><a href="faq.htm">常見問題</a></li>
+                <li><a href="howToCancelOrder.htm">如何取消訂單</a></li>
+                <li><a href="howToReturnGoods.htm">如何退換貨</a></li>
+                <!-- 2017-12-26 新增「如何分享心得」 -->
+                <li><a href="howToReviews.htm">如何分享心得</a></li>
+              </ul>
+            </div>
+            <div class="quickLinks contact">
+              <h3>連絡我們</h3>
+              <ul>
+                <li><a href="serviceLine.htm">展示中心</a></li>
+                <!-- <li><a href="contactUs.htm">連絡我們</a></li> -->
+                <li><a href="vendorProposal.htm">廠商提案</a></li>
+              </ul>
+            </div>
+            <div class="quickLinks aboutUs">
+              <h3>關於我們</h3>
+              <ul>
+                <li><a href="about486Shop.htm">關於486團購</a></li>
+                <!-- <li><a href="javascript:;">486社會責任</a></li> -->
+                <li><a href="mediaReportsList.htm">媒體報導</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="socialShare">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKK486%2FCBIO34Pd7TVC6w&tabs=timeline&width=280&height=244&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="295"
+              height="244"
+              class="fb"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+            ></iframe>
+            <!-- <a href="https://line.me/R/ti/p/%40aov6537w" class="line">486團購</a> -->
+            <a
+              href="https://pse.is/486YT"
+              class="youtube"
+              target="_blank"
+              rel="noopener"
+              >Youtube</a
+            >
+          </div>
+          <p class="copyright">
+            &copy;2016&nbsp;包昇數位文化有限公司&nbsp;版權所有
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="modal-overlay">
+      <svg id="svg"></svg>
+    </div>
+    <div class="modal tssModal" id="TSSModal">
+      <div class="modal-dialog">
+        <section class="modal-body">
+          <h3>※交易安全聲明※</h3>
+          <p>
+            本網頁是全球安全認證網站，您可點選瀏覽器右下角的金鑰符號以確認安全憑證的詳細資料，或是點選下圖安全標章以確認本網站的安全性。為了讓您享有安全、隱密的購物環境，免除在網路購物時信用卡被盜刷的疑慮，本網頁引進了全球最先進、金融機構及銀行專用的
+            SSL128
+            位元傳輸安全保護機制－台灣網路認證公司的安全電子交易認證SSL（Secure
+            Socket Layer
+            通訊協定）傳輸加密機制，以保障每位網友機密資料的安全傳送。我們的目標就是提供您一個安全又穩定的線上消費環境，同時保證您的每一筆交易都是100%的安全。
+          </p>
+          <h3>※3碼檢查碼(CVC2/CVV2值)說明※</h3>
+          <p>
+            若您是MasterCard / VISA 卡之<br />
+            (1)實體卡持卡人：即請填入列印於卡片背面簽名欄上緊接於卡號後四碼之三位阿拉伯數字。<br />
+            (2)虛擬卡持卡人：即請填入發卡行核發該卡之說明參考資料(卡)所指定之三位阿拉伯數字，以取得更安全完善的線上交易。
+          </p>
+          <h3>※SSL交易過程※</h3>
+          <p>
+            所有的線上刷卡交易，都是即時取得銀行的授權回應。可能因網際網路的通訊品質不穩而影響授權回應時間，請您在點選刷卡確認鈕前，記下或列印您的訂單編號與消費金額，接著靜待銀行的授權回應，直到出現授權結果的畫面，才關閉閉瀏覽器或跳離本網頁。倘若出現作業逾時的回應，請您稍後回到網路商場重新刷卡購物，或請您詢問購物網站是否成功收到該筆訂單及其處理情形。
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="modal addresseeModal" id="addresseeModal">
+      <div class="modal-dialog">
+        <h2 class="modal-head">常用收件人</h2>
+        <section class="modal-body">
+          <div class="wall">
+            <div class="card">
+              <h3>王小明</h3>
+              <address>台北市南港區成功路一段36巷20號6樓</address>
+              <p>手機：0932123456</p>
+              <p>市話：02-27821111</p>
+              <a href="javascript:;" class="select">選擇</a>
+            </div>
+            <div class="card">
+              <h3>王小明</h3>
+              <address>台北市成功路100號</address>
+              <p>手機：0932123456</p>
+              <p>市話：02-27821111</p>
+              <a href="javascript:;" class="select">選擇</a>
+            </div>
+            <div class="card">
+              <h3>王小明</h3>
+              <address>台北市南港區成功路100號</address>
+              <p>手機：0932123456</p>
+              <p>市話：02-27821111</p>
+              <a href="javascript:;" class="select">選擇</a>
+            </div>
+            <div class="card">
+              <h3>王小明</h3>
+              <address>台北市南港區成功路100號</address>
+              <p>手機：0932123456</p>
+              <p>市話：02-27821111</p>
+              <a href="javascript:;" class="select">選擇</a>
+            </div>
+            <div class="card">
+              <h3>王小明</h3>
+              <address>台北市南港區成功路100號</address>
+              <p>手機：0932123456</p>
+              <p>市話：02-27821111</p>
+              <a href="javascript:;" class="select">選擇</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="navModal">
+      <span class="navModal-close"></span>
+      <!-- 當前頁面所在類別套用class="active" -->
+      <div class="navMenu active">
+        <h3>會員專區</h3>
+        <ul>
+          <!-- 登入前 -->
+          <li>
+            <!-- 當前頁面a套用class="active" -->
+            <a href="guest.htm?t=0" class="active">會員登入</a>
+          </li>
+          <li><a href="guest.htm?t=1">忘記密碼</a></li>
+          <li><a href="guest.htm?t=2">加入會員</a></li>
+          <!-- 登入後 -->
+          <li><a href="orderQuery.htm">訂單查詢</a></li>
+          <li><a href="wishList.htm">願望清單</a></li>
+          <li><a href="queryHistory.htm">商品提問記錄</a></li>
+          <li><a href="reviewsList.htm">心得分享</a></li>
+          <li><a href="coupon.htm">折價券</a></li>
+          <li><a href="inbox.htm">系統信件</a></li>
+          <li><a href="memberProfile.htm">會員資料修改</a></li>
+          <li><a href="passwd.htm">密碼修改</a></li>
+          <li><a href="addressee.htm">常用收件人</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3><a href="pdtList.htm">商品團購</a></h3>
+        <ul>
+          <li><a href="pdtList.htm">永日文創</a></li>
+          <li><a href="pdtList.htm">搬新辦公室大清倉</a></li>
+          <li><a href="pdtList.htm">獨家好物</a></li>
+          <li><a href="pdtList.htm">極。鐵鍋專區</a></li>
+          <li><a href="pdtList.htm">Gtech Multi 小綠專區</a></li>
+          <li><a href="pdtList.htm">美食朵頤</a></li>
+          <li><a href="pdtList.htm">激賞人氣商品</a></li>
+          <li><a href="pdtList.htm">暖冬必備</a></li>
+          <li><a href="pdtList.htm">地板清潔</a></li>
+          <li><a href="pdtList.htm">空氣清淨</a></li>
+          <li><a href="pdtList.htm">光觸媒除甲醛專區</a></li>
+          <li><a href="pdtList.htm">安心喝水</a></li>
+          <li><a href="pdtList.htm">涼快一夏</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3><a href="pdtList.htm">消耗品配件區</a></h3>
+        <ul>
+          <li><a href="pdtList.htm">Item</a></li>
+          <li><a href="pdtList.htm">Item</a></li>
+          <li><a href="pdtList.htm">Item</a></li>
+        </ul>
+      </div>
+      <div class="navMenu">
+        <h3>任選館</h3>
+        <ul>
+          <li><a href="freeToChoose.htm">類別一</a></li>
+          <li><a href="freeToChoose.htm">類別二</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/pages/shippingInfo.js?v=1"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<h2 class="modal-head">取消訂單</h2>
+<section class="modal-body">
+  <div class="cancelForm">
+    <div class="form-group">
+      <label class="form-label">訂單編號</label>
+      <div class="form-data">20160501001</div>
+    </div>
+    <div class="form-group">
+      <label for="cancelReason" class="form-label">取消原因</label>
+      <div class="form-data">
+        <textarea name="" id="cancelReason" class="form-control" placeholder="很抱歉造成您的困擾，請詳細說明取消原因，將有助於我們改善您的購物體驗。"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="" class="form-label">帳號名稱</label>
+      <div class="form-data">
+        <input type="text" name="rt_name" id="rt_name" class="form-control" placeholder="帳號名稱需與付款人相同">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="" class="form-label">銀行代碼</label>
+      <div class="form-data">
+        <!-- 2017-09-01移除 <input type="text" name="rt_bank01" id="rt_bank01" class="form-control" placeholder="銀行代碼"> -->
+        <!-- 2017-09-01新增 div.bankContainer -->
+        <div class="bankContainer">
+          <select id="" class="form-control bankSelect">
+            <option value="" disabled selected>請選擇銀行</option>
+            <option value="manual">自行輸入</option>
+            <option value="004">004-臺灣銀行</option>
+            <option value="005">005-臺灣土地銀行</option>
+            <option value="006">006-合作金庫商業銀行</option>
+            <option value="007">007-第一商業銀行</option>
+            <option value="008">008-華南商業銀行</option>
+            <option value="009">009-彰化商業銀行</option>
+            <option value="010">010-上海商業儲蓄銀行</option>
+            <option value="021">021-花旗(台灣)商業銀行</option>
+            <option value="039">039-澳盛(台灣)商業銀行</option>
+            <option value="050">050-臺灣中小企業銀行</option>
+            <option value="081">081-滙豐(台灣)商業銀行</option>
+            <option value="805">805-遠東國際商業銀行</option>
+            <option value="810">810-星展(台灣)商業銀行</option>
+            <option value="815">815-日盛國際商業銀行</option>
+          </select>
+          <!-- type請改成"tel" -->
+          <input type="tel" name="rt_bank01" id="rt_bank01" class="form-control bankInput" placeholder="輸入銀行代碼..." readonly>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="" class="form-label">分行名稱</label>
+      <div class="form-data">
+        <input type="text" name="rt_bank02" id="rt_bank02" class="form-control" placeholder="分行名稱">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="" class="form-label">退款帳號</label>
+      <div class="form-data">
+        <input type="text" name="rt_account" id="rt_account" class="form-control" placeholder="銀行帳號">
+      </div>
+    </div>
+    <!-- 2017-09-01 新增"免責條款勾選" -->
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="" id="" class="form-control">
+          <span>我已確認訂購人姓名與退款帳戶姓名相符，若有異我同意提供切結書，以茲証明退款帳戶為本人無誤</span>
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="" id="" class="form-control">
+          <span>我已確認上述退款帳戶資料完全正確，若因資料輸入錯誤造成匯款失敗，我同意提供存摺封面影本並由退款金額中扣除30元/次匯款手續費。(<a href="javascript:;">訂購人姓名非本名切結書</a>、<a href="javascript:;">匯款帳戶非本人戶名切結書</a>)</span>
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn--danger btnSubmit">送出申請</button>
+    </div>
+    <p class="notice">486團購保有取消申請同意與否之權利</p>
+  </div>
+</section>
