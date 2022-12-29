@@ -1,3 +1,3 @@
-axios.get("./data/json").then((res) => {
+axios.get("./data/test.json").then((res) => {
   console.log(res);
 });
